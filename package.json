@@ -1,0 +1,27 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "School project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voloshin-Sergei/E-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Voloshin-Sergei/E-shop/issues"
+  },
+  "homepage": "https://github.com/Voloshin-Sergei/E-shop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0"
+  }
+}

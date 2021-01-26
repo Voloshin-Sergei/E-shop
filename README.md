@@ -1,2 +1,8 @@
 # E-shop
- School project
+
+School project
+
+### layout first page shop site
+
+Bootstrap grid
+Gulp
