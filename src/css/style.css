@@ -1,6 +1,20 @@
+:root {
+  --title-color: #262d33;
+  --text-color: #4b5157;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+}
+
+.header {
+  padding: 15px 0;
 }
 
 .logo-image {
@@ -10,6 +24,7 @@ body {
 .navigation {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
@@ -28,7 +43,7 @@ body {
   background: #4592ff;
   border-radius: 20px;
   border: none;
-  color: #ffffff;
+  color: var(--white-color);
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
@@ -41,6 +56,11 @@ body {
 .button-icon,
 .button-price {
   margin-right: 10px;
+}
+
+.button-icon:last-child {
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 .slide {
@@ -56,13 +76,13 @@ body {
   background: #3dc47e;
   border-radius: 3px;
   padding: 5px 12px;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 12px;
   line-height: 15px;
 }
 
 .slide-title {
-  color: #262d33;
+  color: var(--title-color);
   font-size: 55px;
   line-height: 70px;
   font-family: 'Roboto Slab', serif;
@@ -73,7 +93,7 @@ body {
 .slide-description {
   font-size: 18px;
   line-height: 30px;
-  color: #4b5157;
+  color: var(--text-color);
   margin-bottom: 40px;
   max-width: 335px;
 }
@@ -93,4 +113,72 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.card {
+  min-height: 370px;
+  border-radius: 10px;
+  padding: 60px 46px 80px 46px;
+}
+
+.card-1 {
+  background: #e3e2e3 url(../images/card-img-1.jpg) no-repeat top right;
+  background-size: cover;
+}
+
+.card-2 {
+  background: #000000 url(../images/card-img-2.jpg) no-repeat top right;
+  background-size: cover;
+}
+
+.card-3 {
+  padding-top: 35px;
+  background: #ccd5e6 url(../images/card-img-3.jpg) no-repeat top right 10%;
+  background-size: contain;
+}
+
+.card-4 {
+  padding-top: 35px;
+  padding-left: 25px;
+  background: #ff4f52 url(../images/card-img-4.jpg) no-repeat top right;
+  background-size: contain;
+}
+
+.card-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--title-color);
+  max-width: 222px;
+  margin: 0;
+}
+
+.card-title.large {
+  min-width: 420px;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  max-width: 176px;
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.card-text.large {
+  max-width: 320px;
+}
+
+.card-price {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 900;
+}
+
+.text-light {
+  color: var(--white-color);
 }
